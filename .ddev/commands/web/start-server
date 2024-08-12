@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Description: Start the frontend and backend servers
+## Usage: start-server
+## Example: ddev start-server
+
+cd client
+npm start &
+cd ..
+cd server
+npm start &
