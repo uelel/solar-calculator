@@ -1,0 +1,13 @@
+.header-container {
+	width: 100vw;
+	background-color: var(--color-light);
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  padding: 20px;
+}
+
+.header {
+	font-weight: 700;
+}

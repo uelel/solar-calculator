@@ -1,0 +1,22 @@
+:root {
+  --color-dark: #27357C;
+  --color-light: #F2F4FF;
+}
+
+body {
+  background-color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark);
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 36px;
+}
