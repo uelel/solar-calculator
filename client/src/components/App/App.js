@@ -5,7 +5,7 @@ import { kraje } from '../../data';
 import './App.css';
 // Components
 import Header from '../Header';
-import Input from '../Input';
+import InputSection from '../InputSection';
 
 class App extends React.Component {
 
@@ -48,7 +48,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <Header/>
-        <Input.Kraj name="kraj" label="V jakém kraji žijete?" data={kraje} />
+        <InputSection label="V jakém kraji žijete?" name="kraj" data={kraje} />
       </div>
     );
   };

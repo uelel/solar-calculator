@@ -1,0 +1,13 @@
+.input-section {
+	width: 100%;
+	background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 24px 32px;
+  border-bottom: 2px solid var(--color-light);
+  border-left: 6px solid var(--color-light);
+  border-right: 6px solid var(--color-light);
+}
