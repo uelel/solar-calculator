@@ -15,7 +15,7 @@ import './InputSection.css';
   }
 }*/
 
-const InputSection = ({ label, name, data }) => {
+export default function InputSection ({ label, name, data }) {
   return (
     <div className="input-section" data-name={name}>
       <h3>{label}</h3>
@@ -42,5 +42,3 @@ const InputSection = ({ label, name, data }) => {
     );
   }
 };*/
-
-export default InputSection;
