@@ -48,7 +48,9 @@ class App extends React.Component {
     return (
       <div className="app">
         <Header/>
-        <InputSection label="V jakém kraji žijete?" name="kraj" data={kraje} />
+        <InputSection name="mySection" label="My Input Section">
+          <InputSection.Kraj data={kraje} />
+        </InputSection>  
       </div>
     );
   };
