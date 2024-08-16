@@ -258,8 +258,9 @@ nodejs_version: 18.20.4
 # and you can't erase existing hooks or all environment variables.
 # However, with "override_config: true" in a particular config.*.yaml file,
 # 'use_dns_when_possible: false' can override the existing values, and
-# hooks:
-#   post-start: []
+hooks:
+  post-start:
+    - exec-host: 'alacritty --hold -e bash -c "ddev exec -d /var/www/html/client npm start" &'
 # or
 # web_environment: []
 # or
