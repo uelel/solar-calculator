@@ -2,7 +2,6 @@ import React from 'react';
 
 import { kraje } from '../../data';
 
-import './App.css';
 // Components
 import Header from '../Header';
 import InputSection from '../InputSection';
@@ -46,9 +45,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="app">
+      <div className="w-full flex flex-col items-center overflow-x-hidden text-center">
         <Header/>
-        <InputSection name="mySection" label="My Input Section">
+        <InputSection name="kraj" label="V jakém kraji žijete?">
           <InputSection.Kraj data={kraje} />
         </InputSection>  
       </div>
