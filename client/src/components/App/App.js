@@ -48,13 +48,13 @@ class App extends React.Component {
       <div className="w-full flex flex-col items-center overflow-x-hidden text-center">
         <Header/>
         <InputSection label="V jakém kraji žijete?">
-          <InputSection.Kraj name="kraj" data={kraje} />
+          <InputSection.Kraj name="kraj" data={kraje} defaultValue={kraje[0]['value']} />
         </InputSection>
         <InputSection label="Jaká je vaše spotřeba elektřiny?">
-          <InputSection.Spotreba name="spotreba" />
+          <InputSection.Spotreba name="spotreba" defaultValue="10000" defaultUnit="kwh" />
         </InputSection>
         <InputSection label="Jaký je předpokládaný výkon FVE?">
-          <InputSection.VykonFVE name="vykon_fve" data={vykon_fve} />
+          <InputSection.VykonFVE name="vykon_fve" data={vykon_fve} defaultValue={vykon_fve[3]['value']} />
         </InputSection>
         <InputSection label="Jaký typ FVE plánujete pořídit?">
           <InputSection.TypFVE name="typ_fve" />
