@@ -24,7 +24,7 @@ export const vykon_fve = [
   { label: "20 kWp", value: 20 }
 ];
 
-export const kapacita_baterie = [
+export const baterie_kapacita = [
   { label: "7,1 kWh", value: 7.1 },
   { label: "10,65 kWh", value: 10.65 },
   { label: "14,20 kWh", value: 14.20 },

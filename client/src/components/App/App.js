@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { kraje } from '../../data';
+import { kraje, vykon_fve, baterie_kapacita } from '../../data';
 
 // Components
 import Header from '../Header';
@@ -47,9 +47,21 @@ class App extends React.Component {
     return (
       <div className="w-full flex flex-col items-center overflow-x-hidden text-center">
         <Header/>
-        <InputSection name="kraj" label="V jakém kraji žijete?">
-          <InputSection.Kraj data={kraje} />
-        </InputSection>  
+        <InputSection label="V jakém kraji žijete?">
+          <InputSection.Kraj name="kraj" data={kraje} />
+        </InputSection>
+        <InputSection label="Jaká je vaše spotřeba elektřiny?">
+          <InputSection.Spotreba name="spotreba" />
+        </InputSection>
+        <InputSection label="Jaký je předpokládaný výkon FVE?">
+          <InputSection.VykonFVE name="vykon_fve" data={vykon_fve} />
+        </InputSection>
+        <InputSection label="Jaký typ FVE plánujete pořídit?">
+          <InputSection.TypFVE name="typ_fve" />
+        </InputSection>
+        <InputSection label="Jaká je plánovaná kapacita baterie?">
+          <InputSection.VykonFVE name="baterie_kapacita" data={baterie_kapacita} />
+        </InputSection>
       </div>
     );
   };
