@@ -56,7 +56,9 @@
   }
 
   h2 {
-    @apply text-xl;
+    @apply text-2xl
+           font-bold
+           mb-4;
   }
 
   h3 {

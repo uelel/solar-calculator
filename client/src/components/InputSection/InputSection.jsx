@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { Input } from "@material-tailwind/react";
 import RadioButton from "../MT/RadioButton";
 import DropDown from "../MT/DropDown";
@@ -104,9 +103,13 @@ InputSection.VykonFVE = class extends React.Component {
   }
 
   changeState = (e) => {
+    const newValue = Number(e.target.value);
     this.setState({
-      value: Number(e.target.value)
+      value: newValue
     });
+    if (this.props.onChange) {
+      this.props.onChange(newValue);
+    }
   }
 
   render() {
@@ -178,9 +181,13 @@ InputSection.BaterieKapacita = class extends React.Component {
   }
 
   changeState = (e) => {
+    const newValue = Number(e.target.value);
     this.setState({
-      value: Number(e.target.value)
+      value: newValue
     });
+    if (this.props.onChange) {
+      this.props.onChange(newValue);
+    }
   }
 
   render() {

@@ -21,17 +21,17 @@ export const spotreba_jednotky = [
 ];
 
 export const vykon_fve = [
-  { label: "4 kWp", value: 4 },
-  { label: "6 kWp", value: 6 },
-  { label: "8 kWp", value: 8 },
-  { label: "10 kWp", value: 10 },
-  { label: "15 kWp", value: 15 },
-  { label: "20 kWp", value: 20 }
+  { label: "4 kWp", value: 4, price: 190834, dotace: 67000 },
+  { label: "6 kWp", value: 6, price: 227592, dotace: 83000 },
+  { label: "8 kWp", value: 8, price: 257592, dotace: 99000 },
+  { label: "10 kWp", value: 10, price: 278592, dotace: 115000 },
+  { label: "15 kWp", value: 15, price: 374350, dotace: 115000 },
+  { label: "20 kWp", value: 20, price: 441108, dotace: 115000 }
 ];
 
 export const baterie_kapacita = [
-  { label: "7,1 kWh", value: 7.1 },
-  { label: "10,65 kWh", value: 10.65 },
-  { label: "14,20 kWh", value: 14.20 },
-  { label: "17,76 kWp", value: 17.76 }
+  { label: "7,1 kWh", value: 7.1, price: 88166 },
+  { label: "10,65 kWh", value: 10.65, price: 121408 },
+  { label: "14,20 kWh", value: 14.20, price: 154650 },
+  { label: "17,76 kWp", value: 17.76, price: 187892 }
 ];
