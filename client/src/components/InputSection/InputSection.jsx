@@ -5,12 +5,15 @@ import RadioButton from "../MT/RadioButton";
 import DropDown from "../MT/DropDown";
 
 class InputSection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-    const { label, children, ...rest } = this.props;
     return (
       <div className="w-full flex flex-col justify-center items-start flex-nowrap px-6 py-8 bg-white border-light border-x-8 border-b-2">
-        <h3>{label}</h3>
-        {children}
+        <h3>{this.props.label}</h3>
+        {this.props.children}
       </div>
     );
   }
@@ -133,9 +136,13 @@ InputSection.TypFVE = class extends React.Component {
   }
 
   changeState = (e) => {
+    const newValue = String(e.target.value);
     this.setState({
-      value: String(e.target.value)
+      value: newValue
     });
+    if (this.props.onChange) {
+      this.props.onChange();
+    }
   }
 
   render() {
