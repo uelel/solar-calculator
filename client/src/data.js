@@ -15,6 +15,11 @@ export const kraje = [
   { label: "Zlínský", value: "zlinsky" }
 ];
 
+export const spotreba_jednotky = [
+  { label: "kWh", value: "kwh" },
+  { label: "MWh", value: "mwh" }
+];
+
 export const vykon_fve = [
   { label: "4 kWp", value: 4 },
   { label: "6 kWp", value: 6 },

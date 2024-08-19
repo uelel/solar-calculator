@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { kraje, vykon_fve, baterie_kapacita } from '../../data';
+import { kraje, spotreba_jednotky, vykon_fve, baterie_kapacita } from '../../data';
 
 // Components
 import Header from '../Header';
@@ -51,16 +51,16 @@ class App extends React.Component {
           <InputSection.Kraj name="kraj" data={kraje} defaultValue={kraje[0]['value']} />
         </InputSection>
         <InputSection label="Jaká je vaše spotřeba elektřiny?">
-          <InputSection.Spotreba name="spotreba" defaultValue="10000" defaultUnit="kwh" />
+          <InputSection.Spotreba name="spotreba" defaultValue="10000" data={spotreba_jednotky} defaultUnit={spotreba_jednotky[0]['value']} />
         </InputSection>
         <InputSection label="Jaký je předpokládaný výkon FVE?">
           <InputSection.VykonFVE name="vykon_fve" data={vykon_fve} defaultValue={vykon_fve[3]['value']} />
         </InputSection>
         <InputSection label="Jaký typ FVE plánujete pořídit?">
-          <InputSection.TypFVE name="typ_fve" />
+          <InputSection.TypFVE name="typ_fve" defaultValue="bez_baterie" />
         </InputSection>
         <InputSection label="Jaká je plánovaná kapacita baterie?">
-          <InputSection.VykonFVE name="baterie_kapacita" data={baterie_kapacita} />
+          <InputSection.VykonFVE name="baterie_kapacita" data={baterie_kapacita} defaultValue={baterie_kapacita[1]['value']} />
         </InputSection>
       </div>
     );
