@@ -27,9 +27,13 @@ InputSection.Kraj = class extends React.Component {
   }
 
   changeState = (e) => {
+    const newValue = String(e);
     this.setState({
-      value: String(e)
+      value: newValue
     });
+    if (this.props.onChange) {
+      this.props.onChange(newValue);
+    }
   }
 
   render() {
@@ -56,15 +60,29 @@ InputSection.Spotreba = class extends React.Component {
   }
 
   changeValue = (e) => {
+    const newValue = String(e.target.value);
     this.setState({
-      value: String(e.target.value)
+      value: newValue
     });
+    if (this.props.onChange) {
+      this.props.onChange({
+        "value": newValue,
+        "unit": null
+      });
+    }
   }
   
   changeUnit = (e) => {
+    const newValue = String(e);
     this.setState({
-      unit: String(e)
+      unit: newValue
     });
+    if (this.props.onChange) {
+      this.props.onChange({
+        "value": null,
+        "unit": newValue
+      });
+    }
   }
 
   render() {
