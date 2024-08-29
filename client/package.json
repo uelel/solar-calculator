@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "http(s)://uelel.github.io/solar-calculator",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.5",
@@ -17,6 +18,7 @@
   "scripts": {
     "start": "PORT=3000 react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "3.4.10"
   }
 }
