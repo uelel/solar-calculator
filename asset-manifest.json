@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/solar-calculator/static/css/main.99d4cc4c.css",
+    "main.css": "/solar-calculator/static/css/main.497c5e9e.css",
     "main.js": "/solar-calculator/static/js/main.0d2f0e47.js",
     "static/media/roboto-latin-700-normal.woff": "/solar-calculator/static/media/roboto-latin-700-normal.9f6a16a7770c87b2042b.woff",
     "static/media/roboto-latin-500-normal.woff": "/solar-calculator/static/media/roboto-latin-500-normal.68d40d6d01c6f85d24ba.woff",
@@ -9,11 +9,11 @@
     "static/media/roboto-latin-ext-500-normal.woff": "/solar-calculator/static/media/roboto-latin-ext-500-normal.06c30711d588145a4541.woff",
     "static/media/roboto-latin-ext-700-normal.woff": "/solar-calculator/static/media/roboto-latin-ext-700-normal.3c5bcdd0e69c4c3ffafe.woff",
     "index.html": "/solar-calculator/index.html",
-    "main.99d4cc4c.css.map": "/solar-calculator/static/css/main.99d4cc4c.css.map",
+    "main.497c5e9e.css.map": "/solar-calculator/static/css/main.497c5e9e.css.map",
     "main.0d2f0e47.js.map": "/solar-calculator/static/js/main.0d2f0e47.js.map"
   },
   "entrypoints": [
-    "static/css/main.99d4cc4c.css",
+    "static/css/main.497c5e9e.css",
     "static/js/main.0d2f0e47.js"
   ]
 }
