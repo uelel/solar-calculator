@@ -6,6 +6,11 @@ module.exports = withMT({
     "./src/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}"
   ],
+  purge: [
+    "./src/**/*.html",
+    "./src/*.{js,jsx,ts,tsx}",
+    "./src/components/**/*.{js,jsx,ts,tsx}"
+  ],
   theme: {
     extend: {
       colors : {
