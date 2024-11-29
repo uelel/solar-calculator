@@ -260,7 +260,7 @@ nodejs_version: 18.20.4
 # 'use_dns_when_possible: false' can override the existing values, and
 hooks:
   post-start:
-    - exec-host: 'alacritty --hold -e bash -c "ddev exec -d /var/www/html/client npm start" &'
+    - exec-host: 'alacritty --hold -e bash -c "ddev exec -d /var/www/html npm start" &'
 # or
 # web_environment: []
 # or
