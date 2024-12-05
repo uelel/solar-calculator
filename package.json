@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "http://uelel.github.io/solar-calculator",
+  "homepage": "https://uelel.github.io/solar-calculator",
   "private": true,
   "dependencies": {
     "react": "18.2.0",
