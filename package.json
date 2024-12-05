@@ -4,15 +4,15 @@
   "homepage": "http://uelel.github.io/solar-calculator",
   "private": true,
   "dependencies": {
-    "@heroicons/react": "^2.1.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "@heroicons/react": "^2.1.5"
   },
   "scripts": {
     "start": "vite",
-    "build": "NODE_ENV=production vite build",
-    "predeploy": "NODE_ENV=production npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
