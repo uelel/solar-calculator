@@ -1,5 +1,4 @@
 import React from "react";
-import { Radio } from "@material-tailwind/react";
 
 class RadioButton extends React.Component {
   render() {

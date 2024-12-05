@@ -1,7 +1,8 @@
 import React from 'react';
-import { Input } from "@material-tailwind/react";
+
 import RadioButton from "../MT/RadioButton";
 import DropDown from "../MT/DropDown";
+import Input from "../MT/Input";
 
 class InputSection extends React.Component {
   constructor(props) {
@@ -91,11 +92,8 @@ InputSection.Spotreba = class extends React.Component {
         <div className="w-8/12">
           <Input
             name={this.props.name} 
+            type="number"
             value={this.state.value} 
-            size="lg" 
-            variant="outlined" 
-            type="number" 
-            className="!text-lg !font-medium !text-dark border border-dark focus:border-2 active:border-2 outline-none" 
             onChange={this.changeValue}
           />
         </div>
